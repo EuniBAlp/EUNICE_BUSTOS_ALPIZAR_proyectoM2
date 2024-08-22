@@ -1,20 +1,26 @@
-
-import os
-x = int (input ('Ingresa el valor de x: '))
-y = int (input ('Ingresa el valor de y: '))
+#SE DA BIENVENIDA E INTRODUCCION"
+print ("HOLA, HOY TE AYUDAREMOS A ENCONTRAR EL CUADRANTE SEGUN LAS COORDENADAS QUE NOS INDIQUES.")
+print("NECESITAREMOS QUE INGRESES LAS COORDENADAS")
+#INTERACTUAR CON EL Sistema Operativo#
+import os 
+#INGRESA COORDENADAS#
+x = int (input ('INGRESA EL VALOR DE LA COORDENADA X: '))
+y = int (input ('INGRESA EL VALOR LA COORDENADA Y: '))
 if x==0 and y==0:
-    print ('Origen')
+    print ('SE ENCUENTRA EN PUNTO ORIGEN')
 if x==0:
-    print ('Eje Y')
+    print ('EJE Y')
 if y==0:
-    print ('Eje X')
+    print ('EJE X')
 if x>0 and y>0:
-    print ('Cuadrante I')
+    print ('SE ENCUENTRA EN EL CUADRANTE I')
 if x<0 and y>0:
-    print ('Cuadrante II')
+    print ('SE ENCUENTRA EN EL CUADRANTE II')
 if x<0 and y<0:
-    print ('Cuadrante III')
+    print ('SE ENCUENTRA EN EL CUADRANTE III')
 if x>0 and y<0:
-    print ('Cuadrante VI')
-print ()
-os.system ('pause')
+    print ('SE ENCUENTRA EN EL CUADRANTE VI')
+os. system ("pause")
+#SE CIERRA LA INTERACCION CON SO#
+#EL CODIGO FUNCIONA DE LA MISMA MANERA SI QUITAMOS LA INTERACCION CON SO A EXCEPCION DEL FINAL#
+# EN EL CUAL NOS PIDE TOCAR UNA TECLA PARA CONTINUAR, COMO UN CIERRE#
